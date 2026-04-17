@@ -1,0 +1,22 @@
+{
+  "LOG": false,
+  "HOST": "127.0.0.1",
+  "PORT": 3456,
+  "Providers": [
+    {
+      "name": "groq",
+      "api_base_url": "https://api.groq.com/openai/v1/chat/completions",
+      "api_key": "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",
+      "models": ["llama-3.3-70b-versatile"],
+      "transformer": {
+        "use": [
+          ["openai", { "reasoning": "none" }]
+        ]
+      }
+    }
+  ],
+  "Router": {
+    "default": "groq,llama-3.3-70b-versatile",
+    "claude-3-5-sonnet-20241022": "groq,llama-3.3-70b-versatile"
+  }
+}
