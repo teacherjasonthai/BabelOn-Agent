@@ -21,6 +21,5 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: BabelOn-V1 # <--- Changed name to avoid the "v3 conflict"
+          name: BabelOn-Vietnam-Release # New name to avoid v3 conflict
           path: build/ios/ipa/*.ipa
-          overwrite: true # <--- Added this to prevent it from hanging
